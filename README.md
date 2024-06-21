@@ -4,6 +4,9 @@
 
 This was made my matte. Please check the original [here](https://github.com/matte-ek/BanchoMultiplayerBot/)
 
+
+----------
+
 Multiplayer bot for osu! written in C#, powered by [BanchoSharp](https://github.com/hburn7/BanchoSharp)
 
 Preview (Web interface):
