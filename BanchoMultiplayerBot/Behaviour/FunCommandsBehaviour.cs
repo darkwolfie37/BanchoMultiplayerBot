@@ -84,7 +84,7 @@ public class FunCommandsBehaviour : IBotBehaviour
 
             var name = player.Id.ToString() ?? HttpUtility.UrlEncode(player.Name);
             var nameIdentifier = _lobby.Bot.Configuration.StatisticsUrl != null
-                ? $"[{_lobby.Bot.Configuration.StatisticsUrl}/user/{name} {player.Name}]"
+                ? $"[{_lobby.Bot.Configuration.StatisticsUrl}/users/{name} {player.Name}]"
                 : player.Name;
             
             if (msg.Content.ToLower().Equals("!playtime") || msg.Content.ToLower().Equals("!pt"))

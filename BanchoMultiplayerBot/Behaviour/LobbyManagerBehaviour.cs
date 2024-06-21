@@ -109,6 +109,8 @@ public class LobbyManagerBehaviour : IBotBehaviour
 
                 Task.Run(EnsureMatchFinished);
             }
+
+            // TODO: Currency System
         }
 
         if (message.Content.StartsWith("Removed the match password") ||

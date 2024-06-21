@@ -33,6 +33,8 @@ public class BotConfiguration
     public bool? WebhookNotifyUserMessage { get; set; } = true;
     public bool? WebhookNotifyBotMention { get; set; } = true;
     public bool? WebhookMentionSeperateWebhook { get; set; } = false;
+
+    public bool? WebhookAllMessages { get; set; } = true;
     public string? WebhookSeperateUrl { get; set; }
 
     public string? StatisticsUrl { get; set; }

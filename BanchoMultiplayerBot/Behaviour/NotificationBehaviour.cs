@@ -66,7 +66,14 @@ namespace BanchoMultiplayerBot.Behaviour
                 msg.Content.Contains($" {_lobby.Bot.Configuration.Username} "))
             {
                 await WebhookUtils.SendWebhookMessage(WebhookUrl, $"Name Mention ({_lobby.Configuration.Name})", $"{SanitizeUserMessage(msg.Sender)}: {SanitizeUserMessage(msg.Content)}");
+                return;
             }
+            if (_lobby.Bot.Configuration.WebhookAllMessages != true)
+            {
+                return;
+            }
+
+            await WebhookUtils.SendWebhookMessage(WebhookUrl, $"User Message ({SanitizeUserMessage(msg.Sender)})", $"{SanitizeUserMessage(msg.Content)}");
         }
 
         // Passing raw user input into a Discord webhook doesn't sound ideal to me, so to be 

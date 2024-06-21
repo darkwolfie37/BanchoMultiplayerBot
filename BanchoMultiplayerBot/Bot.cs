@@ -16,7 +16,7 @@ namespace BanchoMultiplayerBot;
 
 public class Bot
 {
-    public static string Version => "1.5.4";
+    public static string Version => "1.5.6";
 
     public BanchoClient Client { get; private set; }
 
@@ -269,8 +269,13 @@ public class Bot
         OnLobbiesUpdated?.Invoke();
     }
 
-    public void RemoveLobby(Lobby lobby)
+    public async void RemoveLobby(Lobby lobby)
+
     {
+        lobby.SendMessage("Lobby closed by owner. Goodbye!");
+        lobby.SendMessage("!mp close");
+        Thread.Sleep(1000);
+        await Client.PartChannelAsync(lobby.Channel);
         Lobbies.Remove(lobby);
         OnLobbiesUpdated?.Invoke();
     }

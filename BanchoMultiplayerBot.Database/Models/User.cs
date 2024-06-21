@@ -30,6 +30,8 @@
         public bool AutoSkipEnabled { get; set; } = false;
         
         public bool Administrator { get; set; } = false;
+
+        public int Money { get; set; } = 0;
         
         public ICollection<PlayerBan> Bans { get; } = null!;
     }
