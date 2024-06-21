@@ -2,7 +2,7 @@
 
 ## Original
 
-This was made my matte. Please check the original [here](https://github.com/matte-ek/BanchoMultiplayerBot/)
+This was made by matte. Please check the original [here](https://github.com/matte-ek/BanchoMultiplayerBot/)
 
 
 ----------
