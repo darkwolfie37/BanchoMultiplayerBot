@@ -19,7 +19,7 @@
 
     <ItemGroup>
       <Reference Include="BanchoSharp">
-        <HintPath>..\..\BanchoSharp\BanchoSharp\bin\Debug\net6.0\BanchoSharp.dll</HintPath>
+        <HintPath>..\BanchoSharp.dll</HintPath>
       </Reference>
     </ItemGroup>
 
